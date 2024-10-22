@@ -58,3 +58,21 @@ React and Chart.js for providing the tools to create a dynamic and interactive U
 Public API for providing user data.
 Vercel for seamless deployment and hosting.
 
+## DashBoard
+![image](https://github.com/user-attachments/assets/bd3a3c04-97f1-4cb6-93b3-850ef1c80ac0)
+
+## View Users
+![image](https://github.com/user-attachments/assets/e923108f-b4ae-4c36-aec0-d03fe9ba7557)
+
+## Manage Users (Edit or Delete)
+![image](https://github.com/user-attachments/assets/69c69fb0-62c0-4655-b961-eea43bf11288)
+
+## Add New User
+![image](https://github.com/user-attachments/assets/1405abe4-3355-45f5-bb0f-05691a8bd3ef)
+
+## Search and Filter
+![image](https://github.com/user-attachments/assets/5ece2768-318c-45b2-aa2c-f15ed4edb347)
+
+
+
+
