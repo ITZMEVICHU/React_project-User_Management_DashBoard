@@ -34,12 +34,13 @@ Public API: User data is fetched from a reliable public API to display in the da
 Clone the repository:
 
 ```
-git clone https://github.com/your-username/react-user-management-dashboard.git
+git clone https://github.com/your-username/React_project-User_Management_DashBoard.git
+
 ```
 Navigate into the project directory:
 
 ```
-cd react-user-management-dashboard
+cd React_project-User_Management_DashBoard
 ```
 Install the dependencies:
 
