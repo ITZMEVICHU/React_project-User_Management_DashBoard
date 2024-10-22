@@ -1,0 +1,467 @@
+/* Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Stylish Side Navigation */
+.side-nav {
+  background-color: #2c3e50;
+  padding: 20px;
+  width: 250px;
+  color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 100%;
+}
+
+.side-nav h2 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ecf0f1;
+}
+
+.side-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-nav ul li {
+  margin-bottom: 20px;
+}
+
+.side-nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.side-nav ul li a:hover {
+  color: #1abc9c;
+}
+
+/* Content Styling */
+.content-container {
+  margin-left: 270px; /* To accommodate the fixed side nav */
+  padding: 40px;
+  flex-grow: 1;
+  background-color: #f5f5f5;
+}
+
+/* Dashboard Styling */
+.dashboard {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.dashboard h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.dashboard p {
+  font-size: 24px;
+  color: #16a085;
+  font-weight: 500;
+}
+
+/* Table Styling */
+.user-list {
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 6px 0;
+}
+
+.user-list h2 {
+  font-size: 28px;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.user-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-list table, th, td {
+  border: 1px solid #ddd;
+}
+
+.user-list th, td {
+  padding: 12px 20px;
+  text-align: left;
+}
+
+.user-list th {
+  background-color: #34495e;
+  color: white;
+  font-weight: 600;
+}
+
+.user-list td {
+  background-color: white;
+}
+
+.user-list button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.user-list button:hover {
+  background-color: #c0392b;
+}
+
+/* Form Styling */
+.user-form {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.user-form h2 {
+  font-size: 28px;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.user-form input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.user-form button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.user-form button:hover {
+  background-color: #16a085;
+}
+
+
+/* General Button Styles */
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylish Edit Button */
+button.edit-btn {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.edit-btn:hover {
+  background: linear-gradient(135deg, #3faee0, #2c91c1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Stylish Delete Button */
+button.delete-btn {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.delete-btn:hover {
+  background: linear-gradient(135deg, #ec6f60, #c64d3d);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Search and Filter Styles */
+.search-filter {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.search-filter h2 {
+  font-size: 28px;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-bar select, 
+.search-bar input, 
+.search-bar button {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #16a085;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px 20px;
+  text-align: left;
+}
+
+th {
+  background-color: #34495e;
+  color: white;
+  font-weight: 600;
+}
+
+td {
+  background-color: white;
+}
+
+/* View Users Styling */
+.view-users {
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 6px 0;
+}
+
+.view-users h2 {
+  font-size: 28px;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.view-users table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.view-users th, td {
+  border: 1px solid #ddd;
+  padding: 12px 20px;
+  text-align: left;
+}
+
+.view-users th {
+  background-color: #34495e;
+  color: white;
+  font-weight: 600;
+}
+
+.view-users button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.view-users button:hover {
+  background-color: #16a085;
+}
+
+.user-form h4 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #34495e;
+}
+
+.user-form input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.user-form button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.user-form button:hover {
+  background-color: #16a085;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-controls button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-controls button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  font-size: 16px;
+  color: #34495e;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-bar select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-bar select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-controls button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-controls button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  font-size: 16px;
+  color: #34495e;
+}
+
